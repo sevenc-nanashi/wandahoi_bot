@@ -20,6 +20,6 @@ if shuffled == BASE
   File.open("./SUCCESS_LOG.md", "a") do |f|
     f.puts "| #{Time.now} | #{tweet.url} |"
   end
-  system "git commit -am 'わんだほーい！'"
+  system "git -c user.name='えむロボ' -c user.email='emu_bot@phoenix_wonderland.com' commit -am 'わんだほーい！'"
   system "git push"
 end
