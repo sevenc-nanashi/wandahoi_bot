@@ -26,7 +26,11 @@ jobs:
           bundle exec ruby tweet.rb
       - name: "い！"
         run: |
-          git config --global user.name "wandahoi"
-          git config --global user.email "emu@phoenix_wonderland.com"
-          git commit -am "わんだほーい！"
-          git push
+          if [ `git status --porcelain | wc -l` -eq 0 ]; then
+            echo "わんだほーい…"
+          else
+            git config --global user.name "wandahoi"
+            git config --global user.email "emu@phoenix_wonderland.com"
+            git commit -am "わんだほーい！"
+            git push
+          fi

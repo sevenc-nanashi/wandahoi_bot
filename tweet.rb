@@ -20,6 +20,4 @@ if shuffled == BASE
   File.open("./SUCCESS_LOG.md", "a") do |f|
     f.puts "| https://github.com/sevenc-nanashi/wandahoi_bot/actions/runs/#{ENV["GITHUB_RUN_ID"]} | #{tweet.url} |"
   end
-else
-  exit 1
 end
