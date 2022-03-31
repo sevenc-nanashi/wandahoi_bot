@@ -18,6 +18,8 @@ puts <<~EOS
 
 if shuffled == BASE
   File.open("./SUCCESS_LOG.md", "a") do |f|
-    f.puts "| https://github.com/sevenc-nanashi/wandahoi_bot/actions/runs/#{ENV["GITHUB_RUN_ID"]} | #{tweet.url} |"
+    f.puts "| #{Time.now} | #{tweet.url} |"
   end
+  system "git commit -am 'わんだほーい！'"
+  system "git push"
 end
