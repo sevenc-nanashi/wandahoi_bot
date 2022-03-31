@@ -12,8 +12,10 @@ jobs:
       - name: "わ"
         uses: actions/checkout@v2
       - name: "ん"
-        run: |
-          echo ${{ secrets.DOTENV }} > .env
+        run: |  # put DOTENV secret to .env
+          cat - > .env << EOF
+          ${{ secrets.DOTENV }}
+          EOF
       - name: "だ"
         uses: ruby/setup-ruby@v1
         with:
