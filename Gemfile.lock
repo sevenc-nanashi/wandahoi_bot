@@ -8,6 +8,7 @@ GEM
       unf (>= 0.0.5, < 1.0.0)
     dotenv (2.7.6)
     equalizer (0.0.11)
+    ffi (1.15.5)
     ffi (1.15.5-x86-mingw32)
     ffi-compiler (1.0.1)
       ffi (>= 1.0.0)
@@ -45,10 +46,12 @@ GEM
       simple_oauth (~> 0.3.0)
     unf (0.1.4)
       unf_ext
+    unf_ext (0.0.8.1)
     unf_ext (0.0.8.1-x86-mingw32)
 
 PLATFORMS
   x86-mingw32
+  x86_64-linux
 
 DEPENDENCIES
   dotenv (~> 2.7)
