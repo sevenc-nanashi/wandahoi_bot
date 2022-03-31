@@ -11,6 +11,10 @@ BASE = "わんだほーい！"
 shuffled = BASE.chars.shuffle.join
 
 tweet = client.update(shuffled)
+puts <<~EOS
+       #{shuffled}:
+         #{tweet.url}
+     EOS
 
 if shuffled == BASE
   File.open("./SUCCESS_LOG.md", "a") do |f|
