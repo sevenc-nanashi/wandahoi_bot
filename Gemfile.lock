@@ -50,6 +50,7 @@ GEM
     unf_ext (0.0.8.1-x86-mingw32)
 
 PLATFORMS
+  aarch64-linux
   x86-mingw32
   x86_64-linux
 
