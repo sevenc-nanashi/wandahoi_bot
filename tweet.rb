@@ -17,9 +17,9 @@ puts <<~EOS
      EOS
 
 if shuffled == BASE
-  File.open("./SUCCESS_LOG.md", "a") do |f|
-    f.puts "| #{Time.now} | #{tweet.url} |"
-  end
+  log = File.read("./SUCCESS_LOG.md").strip
+  log += "\n| #{Time.now} | #{tweet.url} |\n"
+  File.write("./SUCCESS_LOG.md", log)
   system "git -c user.name='えむロボ' -c user.email='emu_bot@phoenix_wonderland.com' commit -am 'わんだほーい！'"
   system "git push"
 end
