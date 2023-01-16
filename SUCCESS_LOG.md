@@ -13,3 +13,4 @@
 | 2022-11-19 00:30:02 +0900 | https://twitter.com/wandahoi_bot/status/1593627599460175872 |
 | 2022-12-20 19:40:02 +0900 | https://twitter.com/wandahoi_bot/status/1605151028185165824 |
 | 2023-01-03 05:50:01 +0900 | https://twitter.com/wandahoi_bot/status/1610015580756791296 |
+| 2023-01-16 21:10:02 +0900 | https://twitter.com/wandahoi_bot/status/1614958149718675456 |
